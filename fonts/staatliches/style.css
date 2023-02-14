@@ -1,0 +1,6 @@
+    @font-face {
+    font-family: 'Staatliches Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Staatliches Regular'), url('Staatliches-Regular.woff') format('woff');
+    }

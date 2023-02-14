@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  <!-- CSS only -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="fonts/staatliches/style.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Mulish:wght@200;300;400;500;600;700&family=Red+Rose:wght@400;500;600&family=Staatliches&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,600;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!--Prevent Zooming-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="js/radar.js"></script>
+  <script src="js/main.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="whole--section">
+    <div class="leftsection float-start col-md-4 col-sm-12 col-lg-4 p-0">
+      <div class="logo">
+        <img src="images/logo.png" alt="" />
+      </div>
+      <div class="content-text">
+        <p class="paragraph-text">
+          <bold>Technology Radar</bold> Is Continuously Evaluating Emaerging
+          Trends And Technologies And Makes Results Publicly Availabel Here.
+        </p>
+      </div>
+      <div class="accordion-section">
+        <div id="accordion">
+          <div class="w-100 float-start mb-4">
+            <div class="w-100 float-start-header">
+              <a data-bs-toggle="collapse" href="#collapseOne" class="notcolapse collapsed">
+                <span class="btn btn-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                  </svg>
+                </span>
+                <span class="text-title">Techniques</span>
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse mt-2" data-bs-parent="#accordion">
+              <div class="w-100 float-start-body">
+                <div class="button-open mb-3" onclick="ShowAndHide('button1')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Adopt</span>
+                </div>
+                <div id="button1" style="display: none">
+                  <!-- <div class="text-nested">
+                    <span class="numberstyle">1</span>
+                    Four Key Metrics
+                    <div class="icon-right" onclick="onHide()">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-arrow-right-circle"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                        />
+                      </svg>
+                    </div>
+                  </div> -->
+
+                  <ul id="Adopt3" class="datashow"></ul>
+                </div>
+                <div class="button-open mb-3" onclick="ShowAndHide('button2')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Trial</span>
+                </div>
+                <div id="button2" style="display: none">
+                  <ul id="Trail3" class="datashow"></ul>
+                </div>
+
+                <div class="button-open mb-3" onclick="ShowAndHide('button3')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Assess</span>
+                </div>
+                <div id="button3" style="display: none">
+                  <ul id="Assess3" class="datashow"></ul>
+                </div>
+
+                <div class="button-open mb-3" onclick="ShowAndHide('button4')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Hold</span>
+                </div>
+                <div id="button4" style="display: none">
+                  <ul id="Hold3" class="datashow"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-100 float-start mb-4">
+            <div class="w-100 float-start-header">
+              <a data-bs-toggle="collapse" href="#collapseOnes" class="notcolapse collapsed">
+                <span class="btn btn-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                  </svg>
+                </span>
+                <span class="text-title">Tools</span>
+              </a>
+            </div>
+            <div id="collapseOnes" class="collapse mt-2" data-bs-parent="#accordion">
+              <div class="w-100 float-start-body">
+                <div class="button-open mb-3" onclick="ShowAndHide('button5')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Adpot</span>
+                </div>
+                <div id="button5" style="display: none">
+                  <ul id="Adopt2" class="datashow"></ul>
+                </div>
+                <div class="button-open mb-3" onclick="ShowAndHide('button6')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Trial</span>
+                </div>
+                <div id="button6" style="display: none">
+                  <ul id="Trail2" class="datashow"></ul>
+                </div>
+                <div class="button-open mb-3" onclick="ShowAndHide('button7')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Assess</span>
+                </div>
+                <div id="button7" style="display: none">
+                  <ul id="Assess2" class="datashow"></ul>
+                </div>
+                <div class="button-open mb-3" onclick="ShowAndHide('button8')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Hold</span>
+                </div>
+                <div id="button8" style="display: none">
+                  <ul id="Hold2" class="datashow"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-100 float-start mb-4">
+            <div class="w-100 float-start-header">
+              <a data-bs-toggle="collapse" href="#collapseThree" class="notcolapse collapsed">
+                <span class="btn btn-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                  </svg>
+                </span>
+                <span class="text-title">Platforms</span>
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse mt-2" data-bs-parent="#accordion">
+              <div class="w-100 float-start-body">
+                <div class="button-open mb-3" onclick="ShowAndHide('button9')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Adpot</span>
+                </div>
+                <div id="button9" style="display: none">
+                  <ul id="Adopt1" class="datashow"></ul>
+                </div>
+                <div class="button-open mb-3" onclick="ShowAndHide('button10')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Trial</span>
+                </div>
+                <div id="button10" style="display: none">
+                  <ul id="Trail1" class="datashow"></ul>
+                </div>
+                <div class="button-open mb-3" onclick="ShowAndHide('button11')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Assess</span>
+                </div>
+                <div id="button11" style="display: none">
+                  <ul id="Assess1" class="datashow"></ul>
+                </div>
+                <div class="button-open mb-3" onclick="ShowAndHide('button12')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Hold</span>
+                </div>
+                <div id="button12" style="display: none">
+                  <ul id="Hold1" class="datashow"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-100 float-start mb-4">
+            <div class="w-100 float-start-header">
+              <a data-bs-toggle="collapse" href="#collapsefour" class="notcolapse collapsed">
+                <span class="btn btn-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                  </svg>
+                </span>
+                <span class="text-title">Languages & Frameworks</span>
+              </a>
+            </div>
+            <div id="collapsefour" class="collapse mt-2" data-bs-parent="#accordion">
+              <div class="w-100 float-start-body">
+                <div class="button-open mb-3" onclick="ShowAndHide('button13')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Adpot</span>
+                </div>
+                <div id="button13" style="display: none">
+                  <ul id="Adopt" class="datashow"></ul>
+                </div>
+                <div class="button-open mb-3" onclick="ShowAndHide('button14')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Trial</span>
+                </div>
+                <div id="button14" style="display: none">
+                  <ul id="Trail" class="datashow"></ul>
+                </div>
+                <div class="button-open mb-3" onclick="ShowAndHide('button15')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Assess</span>
+                </div>
+                <div id="button15" style="display: none">
+                  <ul id="Assess" class="datashow"></ul>
+                </div>
+                <div class="button-open mb-3" onclick="ShowAndHide('button16')">
+                  <span class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </span>
+                  <span class="text-title">Hold</span>
+                </div>
+                <div id="button16" style="display: none">
+                  <ul id="Hold" class="datashow"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ecllipse"></div>
+    </div>
+    <div class="togglesection float-start col-md-8 col-sm-12 col-lg-8 p-0" id="myDIV1">
+      <div class="headersection">
+        <div class="topsection">
+          <div class="right--arrow" onclick="onShow()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg>
+          </div>
+          <div class="content--title">
+            <h3 class="head-text">Techniques</h3>
+            <h6 class="head-smalltitle">Four Key Metrics</h6>
+          </div>
+        </div>
+        <div class="bottom-heading">
+          <div class="section--1">
+            <label class="label-title">Stage</label>
+            <span class="blue--highlight">Adopt</span>
+          </div>
+          <div class="section--1">
+            <label class="label-title">Relevance</label>
+            <span class="blue--highlight">Limited</span>
+          </div>
+          <div class="section--2 float-end">
+            <label class="label-title">Last Update</label>
+            <span class="black--text">12th.June 2022</span>
+          </div>
+        </div>
+      </div>
+      <div class="content--section">
+        <h3>Four Key Metrics</h3>
+        <div class="media">
+          <div class="media-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rightsection float-start col-md-8 col-sm-12 col-lg-8 p-0" id="myDIV2">
+      <div class="menu-section">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link text-white active">Home</a>
+                <a href="#" class="nav-item nav-link text-white">About</a>
+                <a href="#" class="nav-item nav-link text-white">Technology</a>
+              </div>
+              <div class="navbar-nav ms-auto">
+                <button href="#" id="open-modal" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  class="btn btn-info text-white">
+                  Add Entries
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="content-title">
+        <p class="paragraph-text">Technology Radar</p>
+      </div>
+      <div class="radargraph-section">
+        <svg id="radar"></svg>
+      </div>
+    </div>
+  </div>
+  <div class="modal radar-popup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog bg-popup" id="modal-overlay1">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form id="myForm" method="post" action="">
+            <h2 class="tech-head">Technology Radar</h2>
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="label" class="form-label label-common">Title<span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" name="label" id="label" placeholder="Enter the Title "
+                    required />
+                  <p id="error"></p>
+                </div>
+                <div class="col-md-6">
+                  <!-- <div class="form-check form-switch custom-switch">
+                      <input
+                        
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckDefault"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="flexSwitchCheckDefault"
+                        >Current</label
+                      >
+                    </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 mt-3">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="label" class="form-label label-common">Division<span
+                          class="text-danger">*</span></label>
+                      <div class="form-check custom-radio">
+                        <input class="form-check-input" type="radio" id="label1" name="quadrant" value="3" required />
+                        <label class="form-check-label label-common" for="techniques">
+                          Techniques
+                        </label>
+                      </div>
+                      <div class="form-check custom-radio">
+                        <input class="form-check-input" type="radio" id="label1" name="quadrant" value="2" required />
+                        <label class="form-check-label label-common" for="tools">Tools</label>
+                      </div>
+                      <div class="form-check custom-radio">
+                        <input class="form-check-input" type="radio" id="label1" name="quadrant" value="1" required />
+                        <label class="form-check-label label-common" for="platforms">Platforms</label>
+                      </div>
+                      <div class="form-check custom-radio">
+                        <input class="form-check-input" type="radio" id="label1" name="quadrant" value="0" required />
+                        <label class="form-check-label label-common" for="languages">Languages & Frameworks</label>
+                      </div>
+                      <p id="error1"></p>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="label" class="form-label label-common">Stages<span
+                          class="text-danger">*</span></label>
+                      <div class="form-check custom-radio">
+                        <input class="form-check-input" type="radio" id="label2" name="rings" value="2" required />
+                        <label class="form-check-label label-common" for="aceess">Aceess</label>
+                      </div>
+                      <div class="form-check custom-radio">
+                        <input class="form-check-input" type="radio" id="label2" name="rings" value="1" required />
+                        <label class="form-check-label label-common" for="trail">Trail</label>
+                      </div>
+                      <div class="form-check custom-radio">
+                        <input class="form-check-input" type="radio" id="label2" name="rings" value="0" required />
+                        <label class="form-check-label label-common" for="adopt">Adopt</label>
+                      </div>
+                      <div class="form-check custom-radio">
+                        <input class="form-check-input" type="radio" id="label2" name="rings" value="3" required />
+                        <label class="form-check-label label-common" for="hold">Hold</label>
+                      </div>
+                      <p id="error2"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <!-- <div class="mb-4 w-50">
+                      <label for="label" class="form-label label-common"
+                        >Team</label
+                      >
+                      <select class="form-control" >
+                        <option>Kraftx</option>
+                      </select>
+                    </div> -->
+                  <div class="w-50">
+                    <label for="label" class="form-label label-common">Date<span class="text-danger">*</span></label>
+                    <input class="form-control" type="date" id="label3" name="date" required />
+                    <p id="error3"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="label" class="form-label label-common">Messages</label>
+              <textarea class="form-control text-area-class" id="messages" type="text" name="messages"
+                rows="3"></textarea>
+            </div>
+            <div class="col-md-12 mt-3">
+              <button type="submit" class="submit-btn-new" onclick="myvalFunction()">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var open = false;
+    function ShowAndHide(divid) {
+      var x = document.getElementById(divid);
+      const element = document.querySelector("#buttonnew");
+      if (x.style.display == "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    window.onload = onShow();
+    function onHide() {
+      document.getElementById("myDIV1").style.display = "block";
+      document.getElementById("myDIV2").style.display = "none";
+    }
+    function onShow() {
+      document.getElementById("myDIV1").style.display = "none";
+      document.getElementById("myDIV2").style.display = "block";
+    }
+    // Validation codes
+    function myvalFunction() {
+      const inpObj = document.getElementById("label");
+      if (!inpObj.checkValidity()) {
+        document.getElementById("error").innerHTML = inpObj.validationMessage;
+      } else {
+        document.getElementById("error").innerHTML = "";
+      }
+      const inpObj1 = document.getElementById("label1");
+      if (!inpObj1.checkValidity()) {
+        document.getElementById("error1").innerHTML =
+          inpObj1.validationMessage;
+      } else {
+        document.getElementById("error1").innerHTML = "";
+      }
+      const inpObj2 = document.getElementById("label2");
+      if (!inpObj2.checkValidity()) {
+        document.getElementById("error2").innerHTML =
+          inpObj2.validationMessage;
+      } else {
+        document.getElementById("error2").innerHTML = "";
+      }
+      const inpObj3 = document.getElementById("label3");
+      if (!inpObj3.checkValidity()) {
+        document.getElementById("error3").innerHTML =
+          inpObj3.validationMessage;
+      } else {
+        document.getElementById("error3").innerHTML = "";
+      }
+    }
+    //Ends here
+
+
+    async function fetchData() {
+      const baseObj = [
+        {
+          svg_id: "radar",
+          width: 518,
+          height: 518,
+          colors: {
+            background: "#3FC0D0",
+            grid: "#000",
+            inactive: "#ddd",
+          },
+          title: "",
+          quadrants: [
+            {
+              name: "Languages",
+            },
+            {
+              name: "Infrastructure",
+            },
+            {
+              name: "Datastores",
+            },
+            {
+              name: "Data Management",
+            },
+          ],
+          rings: [
+            {
+              name: "ADOPT",
+              color: "#fff",
+              background: "#ff0000",
+            },
+            {
+              name: "TRIAL",
+              color: "#fff",
+            },
+            {
+              name: "ASSESS",
+              color: "#fff",
+            },
+            {
+              name: "HOLD",
+              color: "#fff",
+            },
+          ],
+          print_layout: true,
+        },
+      ];
+      const myRequest = new Request("json/radar.json"); // alter way..
+
+      const rawData = await fetch(myRequest);
+      const data = await rawData.json();
+      //Get Data under categories
+      // if ("dataf.length != 0") {
+      //   var dataf = JSON.parse(localStorage.getItem("formnew"));
+      //   data.entries.push(dataf);
+      // }
+      /* Languages */
+      var ADOPT = data.entries
+        .filter((e) => e.quadrant == 0 && e.ring == 0)
+        .map((x) => x.label);
+      console.log(ADOPT);
+
+      for (let i = 0; i < ADOPT.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = ADOPT[i];
+        document.querySelector("#Adopt").appendChild(list);
+      }
+
+      var TRIAL = data.entries
+        .filter((e) => e.quadrant == 0 && e.ring == 1)
+        .map((x) => x.label);
+      for (let i = 0; i < TRIAL.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = TRIAL[i];
+        document.querySelector("#Trail").appendChild(list);
+      }
+
+      var ASSESS = data.entries
+        .filter((e) => e.quadrant == 0 && e.ring == 2)
+        .map((x) => x.label);
+      for (let i = 0; i < ASSESS.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = ASSESS[i];
+        document.querySelector("#Assess").appendChild(list);
+      }
+
+      var HOLD = data.entries
+        .filter((e) => e.quadrant == 0 && e.ring == 3)
+        .map((x) => x.label);
+      for (let i = 0; i < HOLD.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = HOLD[i];
+        document.querySelector("#Hold").appendChild(list);
+      }
+
+      /* PLATFORMS */
+      var ADOPT1 = data.entries
+        .filter((e) => e.quadrant == 1 && e.ring == 0)
+        .map((x) => x.label);
+      console.log(ADOPT1);
+      for (let i = 0; i < ADOPT1.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = ADOPT1[i];
+        document.querySelector("#Adopt1").appendChild(list);
+      }
+
+      var TRIAL1 = data.entries
+        .filter((e) => e.quadrant == 1 && e.ring == 1)
+        .map((x) => x.label);
+      for (let i = 0; i < TRIAL1.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = TRIAL1[i];
+        document.querySelector("#Trail1").appendChild(list);
+      }
+
+      var ASSESS1 = data.entries
+        .filter((e) => e.quadrant == 1 && e.ring == 2)
+        .map((x) => x.label);
+      for (let i = 0; i < ASSESS1.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = ASSESS1[i];
+        document.querySelector("#Assess1").appendChild(list);
+      }
+
+      var HOLD1 = data.entries
+        .filter((e) => e.quadrant == 1 && e.ring == 3)
+        .map((x) => x.label);
+      for (let i = 0; i < HOLD1.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = HOLD1[i];
+        document.querySelector("#Hold1").appendChild(list);
+      }
+
+      /* TOOLS */
+      var ADOPT2 = data.entries
+        .filter((e) => e.quadrant == 2 && e.ring == 0)
+        .map((x) => x.label);
+      console.log(ADOPT2);
+      for (let i = 0; i < ADOPT2.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = ADOPT2[i];
+        document.querySelector("#Adopt2").appendChild(list);
+      }
+
+      var TRIAL2 = data.entries
+        .filter((e) => e.quadrant == 2 && e.ring == 1)
+        .map((x) => x.label);
+      for (let i = 0; i < TRIAL2.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = TRIAL2[i];
+        document.querySelector("#Trail2").appendChild(list);
+      }
+
+      var ASSESS2 = data.entries
+        .filter((e) => e.quadrant == 2 && e.ring == 2)
+        .map((x) => x.label);
+      for (let i = 0; i < ASSESS2.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = ASSESS2[i];
+        document.querySelector("#Assess2").appendChild(list);
+      }
+
+      var HOLD2 = data.entries
+        .filter((e) => e.quadrant == 2 && e.ring == 3)
+        .map((x) => x.label);
+      for (let i = 0; i < HOLD2.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = HOLD2[i];
+        document.querySelector("#Hold2").appendChild(list);
+      }
+
+      /* TECHNIQUES */
+      var ADOPT3 = data.entries
+        .filter((e) => e.quadrant == 3 && e.ring == 0)
+        .map((x) => x.label);
+      console.log(ADOPT2);
+      for (let i = 0; i < ADOPT3.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = ADOPT3[i];
+        document.querySelector("#Adopt3").appendChild(list);
+      }
+
+      var TRIAL3 = data.entries
+        .filter((e) => e.quadrant == 3 && e.ring == 1)
+        .map((x) => x.label);
+      for (let i = 0; i < TRIAL3.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = TRIAL3[i];
+        document.querySelector("#Trail3").appendChild(list);
+      }
+
+      var ASSESS3 = data.entries
+        .filter((e) => e.quadrant == 3 && e.ring == 2)
+        .map((x) => x.label);
+      for (let i = 0; i < ASSESS3.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = ASSESS3[i];
+        document.querySelector("#Assess3").appendChild(list);
+      }
+
+      var HOLD3 = data.entries
+        .filter((e) => e.quadrant == 3 && e.ring == 3)
+        .map((x) => x.label);
+      for (let i = 0; i < HOLD3.length; i++) {
+        let anchor = document.createElement("a");
+        anchor.onclick = onHide;
+
+        let list = document.createElement("li");
+        list.appendChild(anchor);
+        anchor.innerText = HOLD3[i];
+        document.querySelector("#Hold3").appendChild(list);
+      }
+
+      //Ends here data fetch
+      var getValue = [];
+      let payload2 = getValue.push(data);
+      let radarValue = baseObj.concat(getValue);
+      let merged = {
+        ...radarValue[0],
+        ...radarValue[1],
+      };
+      return merged;
+    }
+
+    const openModalButton = document.getElementById("open-modal");
+    const modalWindowOverlay = document.getElementById("modal-overlay1");
+    const modalWindowexample = document.getElementById("exampleModal");
+    var data;
+    fetchData().then((valData) => {
+      data = valData;
+      radar_visualization(data);
+    });
+
+    const showModalWindow = () => {
+      modalWindowOverlay.style.display = "flex";
+    };
+
+    openModalButton.addEventListener("click", showModalWindow);
+
+    const closeModalButton = document.getElementById("close-modal");
+
+    const hideModalWindow = () => {
+      modalWindowOverlay.style.display = "none";
+      modalWindowexample.style.display = "none";
+    };
+
+    closeModalButton?.addEventListener("click", hideModalWindow);
+
+    const hideModalWindowOnBlur = (e) => {
+      if (e.target === e.currentTarget) {
+        hideModalWindow();
+      }
+    };
+
+    modalWindowOverlay.addEventListener("click", hideModalWindowOnBlur);
+
+    async function myFunction(form) {
+      const formData = new FormData(form);
+      let formValues = Object.fromEntries(formData);
+
+      let singleEntryObj = {
+        quadrant: parseInt(formValues.quadrant),
+        ring: parseInt(formValues.rings),
+        label: formValues.label,
+        active: true,
+        moved: 0,
+      };
+      data.entries.push(singleEntryObj);
+
+      if (singleEntryObj.quadrant == 0 && singleEntryObj.ring == 0) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Adopt").appendChild(list);
+      } else if (singleEntryObj.quadrant == 0 && singleEntryObj.ring == 1) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Trail").appendChild(list);
+      } else if (singleEntryObj.quadrant == 0 && singleEntryObj.ring == 2) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Assess").appendChild(list);
+      } else if (singleEntryObj.quadrant == 0 && singleEntryObj.ring == 3) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Hold").appendChild(list);
+      } else if (singleEntryObj.quadrant == 1 && singleEntryObj.ring == 0) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Adopt1").appendChild(list);
+      } else if (singleEntryObj.quadrant == 1 && singleEntryObj.ring == 1) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Trail1").appendChild(list);
+      } else if (singleEntryObj.quadrant == 1 && singleEntryObj.ring == 2) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Assess1").appendChild(list);
+      } else if (singleEntryObj.quadrant == 1 && singleEntryObj.ring == 3) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Hold1").appendChild(list);
+      } else if (singleEntryObj.quadrant == 2 && singleEntryObj.ring == 0) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Adopt2").appendChild(list);
+      } else if (singleEntryObj.quadrant == 2 && singleEntryObj.ring == 1) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Trail2").appendChild(list);
+      } else if (singleEntryObj.quadrant == 2 && singleEntryObj.ring == 2) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Assess2").appendChild(list);
+      } else if (singleEntryObj.quadrant == 2 && singleEntryObj.ring == 3) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Hold2").appendChild(list);
+      } else if (singleEntryObj.quadrant == 3 && singleEntryObj.ring == 0) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Adopt3").appendChild(list);
+      } else if (singleEntryObj.quadrant == 3 && singleEntryObj.ring == 1) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Trail3").appendChild(list);
+      } else if (singleEntryObj.quadrant == 3 && singleEntryObj.ring == 2) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Assess3").appendChild(list);
+      } else if (singleEntryObj.quadrant == 3 && singleEntryObj.ring == 3) {
+        let list = document.createElement("li");
+        list.innerText = singleEntryObj.label;
+        document.querySelector("#Hold3").appendChild(list);
+      }
+
+      //local storage code
+      // localStorage.setItem("formnew", JSON.stringify(singleEntryObj));
+      // var dataf = JSON.parse(localStorage.getItem("formnew"));
+
+      // data.entries.push(dataf);
+      // var appdata = data;
+
+      // console.log(appdata);
+      //Ends here
+
+      //radar_visualization(data);
+    }
+
+    const form = document.getElementById("myForm");
+
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+      await myFunction(event.target);
+      hideModalWindow();
+      form.reset();
+    });
+  </script>
+</body>
+
+</html>

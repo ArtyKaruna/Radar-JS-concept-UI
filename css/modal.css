@@ -1,0 +1,862 @@
+* {
+    /* margin: 0; */
+    /* padding: 0; */
+    font-family: 'Staatliches', cursive;
+    /* box-sizing: border-box; */
+}
+
+
+
+.add-btn {
+    /* margin-top: 15px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: end !important; */
+    /* position: absolute;
+    top: 0;
+    right: 0 !important; */
+    margin-top: -855px;
+    border: none;
+    outline: none;
+    background-color: skyblue;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.add-btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid skyblue;
+}
+
+button {
+    padding: 10px;
+    font-size: 1.1em;
+    background: #32bacf;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#modal-overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#modal-overlay #modal {
+    max-width: 930px;
+    width: 100%;
+    background: #5e79a8;
+    height: 675px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#modal-overlay #modal .modal-footer {
+    margin-top: auto;
+}
+
+.submit-btn {
+    margin-top: 15px;
+    float: right;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white
+}
+
+.tech-head {
+    color: white !important;
+    font-weight: 550;
+}
+
+.form-label {
+    color: white !important;
+    font-weight: 550;
+}
+
+.form-check-label {
+    color: white;
+    font-weight: 400;
+}
+
+.form-check-input input[type="radio"]:checked {
+    background-color: white;
+    /* font-weight: 400; */
+}
+
+.close-icon {
+    font-size: 30px !important;
+    cursor: pointer;
+    color: white
+}
+
+.text-area-class {
+    margin-left: -12px;
+    /* margin-top: 10px; */
+}
+
+/* input {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+} */
+
+.form-control {
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+    font-family: "Raleway", sans-serif;
+}
+
+.form-control:hover {
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
+}
+
+
+
+/* Checked values */
+
+
+/* .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+} */
+
+/* Rounded sliders */
+/* .slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+} */
+
+
+
+
+/* .text-message span {
+    font-size: 14px;
+    color: red;
+} */
+
+
+
+/* The alert message box */
+
+
+
+
+
+/* input group form error */
+
+/* .container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px; 
+    position: relative;
+    border: none;
+}
+
+.form-control label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+
+*/
+/* .form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.none input[type="radio"] {
+    display: flex;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control small {
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+} */
+/* 
+.form button {
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+} */
+span.btn.btn-primary {
+    border-radius: 100%;
+    padding: 0px 4px;
+
+}
+
+span.btn svg {
+    width: 14px;
+    height: 14px;
+}
+
+span.btn.btn-black {
+    background: #333;
+    color: #fff;
+    border-radius: 100%;
+    padding: 0px 4px;
+}
+
+.float-start-header a,
+span.text-title {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Staatliches';
+}
+
+.leftsection {
+    background: #bcc1d3;
+    height: 100%;
+    border-radius: 7% 0 0 7%;
+    padding: 38px !important;
+}
+
+.logo {
+    margin-bottom: 25px;
+}
+
+p.paragraph-text {
+    font-size: 16px;
+    font-family: "Red Rose";
+}
+
+p.paragraph-text bold {
+    font-size: 16px;
+    font-family: "Red Rose";
+    font-weight: bold;
+}
+
+span.text-title {
+    position: relative;
+    top: 2px;
+}
+
+.rightsection {
+    background: #333333;
+    color: #fff;
+    padding: 35px !important;
+    border-radius: 0 5% 5% 0;
+    height: 100%;
+}
+
+.whole--section {
+    height: 137vh;
+    float: left;
+    width: 100%;
+}
+
+svg#radar {
+    float: right !IMPORTANT;
+    background: #333 !IMPORTANT;
+    margin-top: 29px;
+    margin-right: 30px;
+}
+
+.rightsection p.paragraph-text {
+    font-size: 42px;
+    width: 200px;
+    float: left;
+    line-height: 49px;
+}
+
+.content-title {
+    border-bottom: 2px solid;
+    float: left;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+a.nav-item.nav-link {
+    padding: 10px 46px 10px 0 !important;
+}
+
+.text-nested {
+    padding: 5px 3px;
+    font-size: 12px;
+    font-family: 'Red Rose';
+}
+
+.ecllipse {
+    box-sizing: border-box;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 303px;
+    top: 300px;
+    border: 50px solid rgba(0, 0, 0, 0.05);
+    border-radius: 100%;
+}
+
+.icon-right {
+    float: right;
+}
+
+span.numberstyle {
+    background: #0d6efd;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-right: 5px;
+    color: #fff;
+    font-family: 'Red Rose' !important;
+}
+
+.media-body p {
+    font-family: 'Mulish', sans-serif;
+}
+
+.radargraph-section {
+    font-family: 'Red Rose';
+}
+
+.float-start-body .text-title {
+    font-family: 'Red Rose' !important;
+    font-size: 14px;
+}
+
+.topsection {
+    background: #008FD5;
+    float: left;
+    width: 100%;
+}
+
+.right--arrow {
+    float: left;
+    width: 75px;
+    height: 70px;
+    text-align: center;
+    padding-top: 17px;
+    color: #fff;
+}
+
+.right--arrow svg {
+    width: 30px;
+    height: 30px;
+}
+
+.content--title {
+    float: left;
+    background: #fff;
+    width: 91.66%;
+    border-bottom: 2px solid #008FD5;
+    padding-left: 17px;
+}
+
+.bottom-heading {
+    background: #E9EDFC;
+    padding: 5px 5px 5px 75px;
+    float: left;
+    width: 100%;
+}
+
+.section--1 {
+    float: left;
+    width: 133px;
+}
+
+label.label-title {
+    float: left;
+    width: 100%;
+    font-family: 'Red Rose';
+    font-size: 16px;
+    color: #666666;
+}
+
+span.blue--highlight {
+    color: #fff;
+    background: #008fd5;
+    padding: 2px 10px;
+    font-size: 14px;
+    font-family: 'Red Rose';
+    border-radius: 3px;
+}
+
+span.black--text {
+    font-family: 'Red Rose';
+    font-size: 14px;
+}
+
+.headersection {
+    float: left;
+    width: 100%;
+}
+
+.content--section {
+    float: left;
+    width: 100%;
+    padding: 30px 75px;
+}
+
+.content--section h3 {
+    font-family: 'Mulish';
+}
+
+h3.head-text {
+    font-family: 'Staatliches';
+    font-size: 32px;
+    position: relative;
+    margin-bottom: 0;
+    top: 6px;
+}
+
+h6.head-smalltitle {
+    font-family: 'Mulish';
+    font-size: 18px;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.datashow ul li {
+    margin: 0;
+    font-family: 'Red Rose' !important;
+    list-style: none;
+}
+
+.datashow ul {
+    margin: 0;
+}
+
+.datashow ul {
+    margin: 0;
+    padding: 3px 0px 0px 21px;
+}
+
+.datashow {
+
+    max-height: 79px;
+
+    overflow: auto;
+
+    float: left;
+
+    width: 100%;
+
+    font-size: 14px;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #008fd5;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #008fd5;
+}
+
+.navbar-nav a {
+    font-family: 'Red Rose';
+}
+
+.btn.btn-info {
+    font-family: 'Inter';
+    text-transform: capitalize !IMPORTANT;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    background: #0B93D6;
+    border: 1px solid #0B93D6;
+}
+
+button.navbar-toggler {
+    background: #fff;
+}
+
+/*Mohan Styles goes here for Modal popup*/
+#error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#error1 {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#error2 {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#error3 {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#modal-overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+
+#modal-overlay #modal {
+    max-width: 930px;
+    width: 100%;
+    background: #5e79a8;
+    height: 675px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    background: rgb(0 0 0 / 40%);
+}
+
+#modal-overlay #modal .modal-footer {
+    margin-top: auto;
+}
+
+.radar-popup {
+    font-family: "Raleway", sans-serif;
+}
+
+.radar-popup .modal-dialog {
+    width: 1000px;
+    max-width: 1000px;
+    border-radius: 0;
+}
+
+.radar-popup .modal-content {
+    background: #3b4857;
+    border-radius: 0;
+}
+
+.custom-switch label.form-check-label {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 6px;
+}
+
+.custom-radio .form-check-input {
+    border: 3px solid #fff;
+    background: transparent;
+}
+
+.custom-radio {
+    margin-bottom: 12px;
+}
+
+.modal-backdrop {
+    display: none;
+}
+
+.submit-btn-new {
+    border: 2px solid #fff;
+    background: transparent !important;
+    font-size: 12px;
+    float: right;
+    margin: 10px;
+    padding: 9px 37px;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+}
+
+.label-common {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.custom-switch {
+    margin-top: 34px;
+}
+
+.custom-switch .form-check-input {
+    height: 1.7em;
+    width: 3.5em !important;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.radar-popup .modal-body {
+    padding: 20px 60px;
+}
+
+.submit-btn {
+    margin-top: 15px;
+    float: right;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.tech-head {
+    color: white !important;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 64px;
+}
+
+.datashow li {
+    list-style: decimal-leading-zero;
+}
+
+.datashow li a:hover {
+    color: #0190d5 !important;
+}
+
+.datashow li a {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1027px) {
+    .radar-popup .modal-dialog {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+    }
+}
+
+/* Mohan Styles ends here*/
+/*Aarthi Responsive Styles*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .leftsection {
+        height: 100%;
+        border-radius: 0;
+        float: left;
+        width: 100%;
+    }
+
+    .rightsection {
+        border-radius: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .radargraph-section {
+        float: left;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    svg#radar {
+        float: left !important;
+        background: #333 !important;
+        height: 100%;
+    }
+
+    .ecllipse {
+        display: none;
+    }
+
+    .content--title {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content--title {
+        width: 84.9% !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 900px) {
+    .radargraph-section {
+        float: left;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    svg#radar {
+        float: left !important;
+    }
+
+    .ecllipse {
+        display: none;
+    }
+
+
+
+    .content--title {
+        width: 84.87%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .radargraph-section {
+        float: left;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    svg#radar {
+        float: left !important;
+    }
+
+    .ecllipse {
+        display: none;
+    }
+
+    .leftsection {
+        height: 240vh;
+    }
+
+    .rightsection {
+        height: 240vh;
+    }
+
+    .content--title {
+        width: 88.66%;
+    }
+}
